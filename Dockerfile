@@ -9,7 +9,7 @@ WORKDIR /app
 FROM base AS deps
 COPY package.json package-lock.json* ./
 COPY prisma ./prisma/
-RUN npm ci
+RUN npm ci --include=dev
 
 # 3. Builder Stage
 FROM base AS builder
