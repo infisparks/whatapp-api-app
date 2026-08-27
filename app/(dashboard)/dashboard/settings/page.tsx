@@ -19,6 +19,8 @@ import {
 } from 'lucide-react';
 import { CopyButton } from '@/components/ui/CopyButton';
 
+export const dynamic = 'force-dynamic';
+
 export default async function SettingsPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

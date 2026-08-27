@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 import { WhatsAppAccountActions } from '@/components/whatsapp/WhatsAppAccountActions';
 
+export const dynamic = 'force-dynamic';
+
 export default async function WhatsAppAccountsPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

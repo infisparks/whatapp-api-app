@@ -19,6 +19,8 @@ import {
 } from 'lucide-react';
 import { TemplatesListClient } from '@/components/whatsapp/TemplatesListClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function TemplatesPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

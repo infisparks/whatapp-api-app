@@ -3,6 +3,8 @@ import { getAuthSession } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { CampaignWizard } from '@/components/whatsapp/CampaignWizard';
 
+export const dynamic = 'force-dynamic';
+
 export default async function CreateCampaignPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

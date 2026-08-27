@@ -3,6 +3,8 @@ import { getAuthSession } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { ContactsClient } from '@/components/whatsapp/ContactsClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function ContactsPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

@@ -3,6 +3,8 @@ import { getAuthSession } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 import { InboxView } from '@/components/whatsapp/InboxView';
 
+export const dynamic = 'force-dynamic';
+
 export default async function InboxPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';

@@ -6,6 +6,9 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/Ca
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { formatRelativeTime, formatDisplayPhone } from '@/lib/utils';
+
+export const dynamic = 'force-dynamic';
+
 import {
   Smartphone,
   CheckCircle2,

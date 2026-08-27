@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { CampaignListClient } from '@/components/whatsapp/CampaignListClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function CampaignsPage() {
   const session = await getAuthSession();
   const orgId = session?.organizationId || '';
